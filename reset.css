@@ -25,6 +25,8 @@ time, mark, audio, video {
 
 a{
     text-decoration: none;
+    color: inherit;
+    font-style: inherit;
 }
 
 /* make sure to set some focus styles for accessibility */

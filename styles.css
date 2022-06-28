@@ -1,16 +1,294 @@
 /* general styling, colours and fonts */
 
-.header-mobile{
-    display: none;
+.tags {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #7b7b7b;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+h2 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  padding: 50px 0px;
+
+  letter-spacing: 0.05em;
+}
+
+h3 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+h4 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 166%;
+}
+
+h5 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 166%;
+}
+
+h6 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+}
+
+button {
+  width: 180px;
+  height: 46px;
+  background: #565656;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  margin: auto;
+  display: block;
+}
+
+#info  p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+}
+
+footer  h1 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+footer a {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  display: block;
+}
+
+footer p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 166%;
+  text-align: center;
+}
+
+.date {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  color: #7b7b7b;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.description {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+}
+
+section {
+  width: 1170px;
+  margin: 90px auto;
+}
+
+/* header */
+
+.header-mobile {
+  display: none;
+}
+
+.header-desktop{
+    width: 1170px;
+    margin: auto ;
+}
+
+img {
+  display: block;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 44px 135px;
+}
+
+.main__banner-title{
+    width: 1170px;
+    margin: auto ;
+}
+
+.header-desctop_right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 84px;
+}
+
+.header-desctop_right ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 42px;
+}
+
+.header-desctop_right li {
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+#main__banner {
+  background-image: url("./img/hero-image.png");
+  height: 60vh;
+  margin: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+#main__banner .main__banner-title  h1 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  position: absolute;
+  top: 100px;
+  left: 135px;
+}
+
+/* blog */
+
+.section_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+
+.section_header > p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #7b7b7b;
+}
+
+.article_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.latest_wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.popular_wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 
 
-/* styles for positioning */
+/* footer */
+
+#info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+#info h6{
+    display: block;
+    min-width: 50%;
+}
+
+footer{
+ background-color: #F4F4F4;
+ padding: 30px 135px;
+}
+
+.footer__main-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1170px;
+    margin: auto;
+}
+
+.footer__main-info ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer__main-info li{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #565656;
+}
+
+.footer__main-info li svg{
+    display: block;
+    margin: auto;
+    padding-top: 25%;
+}
+
+.footer-right h1{
+    padding: 15px 0px;
+}
+
+.footer-right a{
+    padding: 15px 0px;
+}
 
 /* special effects, including hover, active */
 
 /* rwd mobile */
-
 
 /* rwd tablets */
