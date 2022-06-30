@@ -1,5 +1,10 @@
 /* general styling, colours and fonts */
 
+.container{
+    max-width: 2000px;
+    margin: auto;
+}
+
 .tags {
   font-family: "Lato";
   font-style: normal;
@@ -129,7 +134,7 @@ footer p {
 }
 
 section {
-  width: 1170px;
+  max-width: 1170px;
   margin: 90px auto;
 }
 
@@ -140,8 +145,9 @@ section {
 }
 
 .header-desktop {
-  width: 1170px;
-  margin: auto;
+  
+  
+  
 }
 
 .header__menu_hover-line{
@@ -156,15 +162,17 @@ img {
   display: block;
 }
 
-header {
+header .container {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  padding: 44px 135px;
+  padding: 44px 0px;
+  max-width: 1170px;
+  margin: auto;
 }
 
 .main__banner-title {
-  width: 1170px;
+  max-width: 1170px;
   margin: auto;
 }
 
@@ -172,14 +180,14 @@ header {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 84px;
+  flex: 0 0 50%;
 }
 
 .header-desctop_right ul {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 42px;
+  flex-basis: 90%;
 }
 
 .header-desctop_right li {
@@ -197,7 +205,7 @@ header {
   height: 600px;
   margin: auto;
   background-repeat: no-repeat;
-  width: 1440px;
+  max-width: 1440px;
   background-size: cover;
   position: relative;
 }
@@ -283,14 +291,14 @@ header {
 
 footer {
   background-color: #f4f4f4;
-  padding: 30px 135px;
+  padding: 30px 0px;
 }
 
 .footer__main-info {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1170px;
+  max-width: 1170px;
   margin: auto;
 }
 
@@ -350,7 +358,23 @@ button:hover {
 
 /* rwd tablets */
 
-@media only screen and max-width(1480px) {
+@media only screen and (max-width:1440px) {
+
+    .header-desktop{
+        display: none;
+    }
+
+    .header-mobile{
+        display: flex;
+    }
+
+    .mobile__menu_right{
+        display: flex;
+        gap: 40px;
+    }
+    #main__banner{
+        max-width: 1440px;
+    }
 
     .article_wrapper > .blog__item:nth-child(even) {
         flex-direction: row-reverse;
