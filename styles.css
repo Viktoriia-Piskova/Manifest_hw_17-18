@@ -1,0 +1,590 @@
+/* general styling, colours and fonts */
+
+/* body {
+  padding: 15px;
+} */
+
+.container {
+  max-width: 2000px;
+  margin: auto;
+}
+
+.tags {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+
+  color: #7b7b7b;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  font-size: 12px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  padding: 50px 0px;
+
+  letter-spacing: 0.05em;
+}
+
+h3 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+h4 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+}
+
+h5 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+}
+
+h6 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  letter-spacing: 0.1em;
+  line-height: 166%;
+}
+
+button {
+  width: 180px;
+  height: 46px;
+  background: #565656;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  margin: 50px auto;
+  display: block;
+}
+
+#info p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #565656;
+}
+
+footer h1 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+footer a {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  display: block;
+}
+
+footer p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 166%;
+  text-align: center;
+}
+
+.date {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  color: #7b7b7b;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.description {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.05em;
+  color: #565656;
+}
+
+section {
+  max-width: 1170px;
+  margin: 90px auto;
+}
+
+/* header */
+
+.header-mobile {
+  display: none;
+}
+
+.header-desktop {
+}
+
+.header__menu_hover-line {
+  visibility: hidden;
+  width: 40px;
+  border: none;
+  height: 1px;
+  background-color: #000000;
+}
+
+/* img {
+    width: 100%;
+  height: auto;
+} */
+
+header .container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 44px 0px;
+  max-width: 1170px;
+  margin: auto;
+}
+
+.main__banner-title {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.header-desctop_right {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex: 0 0 50%;
+}
+
+.header-desctop_right ul {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-basis: 90%;
+}
+
+.header-desctop_right li {
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+#main__banner {
+  background-image: url("./img/hero-image.png");
+  height: 600px;
+  margin: auto;
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  background-size: cover;
+  position: relative;
+  background-position: bottom;
+}
+
+#main__banner .main__banner-title h1 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  position: absolute;
+  top: 100px;
+  left: 135px;
+}
+
+/* blog */
+
+.section_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+
+.section_header > p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #7b7b7b;
+}
+
+.article_wrapper > .blog__item {
+  display: flex;
+  align-items: center;
+}
+
+.article_wrapper > .blog__item > article {
+  width: 448px;
+  padding: 0px 30px;
+}
+
+.article_wrapper > .blog__item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* latest and popular*/
+
+.latest_wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.popular_wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+..popular__items {
+  flex-shrink: inherit;
+}
+
+.popular__items > img {
+  width: 100%;
+  height: auto;
+}
+
+.latest__items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.latest__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* footer */
+
+#info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10%;
+}
+
+#info h6 {
+  display: block;
+  min-width: 50%;
+}
+
+footer {
+  background-color: #f4f4f4;
+  padding: 30px 0px;
+}
+
+.footer__main-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: auto;
+}
+
+.footer__main-info ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer__main-info li {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #565656;
+}
+
+.footer__main-info li svg {
+  display: block;
+  margin: auto;
+  padding-top: 25%;
+}
+
+.footer-right h1 {
+  padding: 15px 0px;
+}
+
+.footer-right a {
+  padding: 15px 0px;
+}
+
+/* special effects, including hover, active */
+
+button:hover {
+  background-color: #323232;
+}
+
+.footer__main-info > ul li:hover {
+  background-color: #565656;
+}
+
+.footer__main-info > ul li:hover svg > path {
+  fill: white;
+}
+
+.header-desctop_right ul li a:hover + .header__menu_hover-line {
+  visibility: visible;
+}
+
+.blog__item img {
+  width: 50%;
+  max-width: 570px;
+  height: auto;
+}
+
+/* rwd tablets */
+
+@media only screen and (max-width: 1440px) {
+  section,
+  .footer__main-info,
+  .main__banner-title,
+  header .container,
+  .header-mobile {
+    max-width: 90vw;
+    margin: 0px auto;
+  }
+
+  .header-desktop {
+    display: none;
+  }
+
+  .header-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    position: relative;
+  }
+
+  #main__banner .main__banner-title h1{
+    left: 34px;
+  }
+
+  .mobile__menu_right {
+    display: flex;
+    gap: 40px;
+  }
+  #main__banner {
+    max-width: 1440px;
+  }
+
+  .article_wrapper > .blog__item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .burger__menu .burger__menu_items {
+    background-color: white;
+    position: absolute;
+    z-index: 99;
+    top: -1500%;
+    left: 50%;
+    font-family: "Lato";
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .burger__menu .burger__menu_items li {
+    display: block;
+    width: 50vw;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 50px 0px;
+  }
+
+  #burger_menu_active {
+    position: absolute;
+    right: 1%;
+    opacity: 0;
+  }
+
+  #burger_menu_active:checked ~ .burger__menu_items {
+    top: 60px;
+    transition: top 1000ms;
+  }
+
+  #burger_menu_active:not(checked) ~ .burger__menu_items {
+    transition: top 1000ms;
+  }
+
+  .latest_wrapper {
+    flex-wrap: wrap;
+  }
+
+  .latest_wrapper .latest__items:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .latest__items {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .latest__items img {
+    flex-basis: 50%;
+  }
+
+  .latest__items article {
+    flex-basis: 36%;
+    padding: 0px 20px;
+  }
+
+  .footer__main-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1170px;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  #contact p {
+    margin-top: 40px;
+  }
+
+  footer{
+    padding: 50px 0px;
+    margin-top: 70px;
+  }
+}
+
+/* rwd mobile */
+
+@media only screen and (max-width: 600px) {
+  #info {
+    display: flex;
+    align-items: baseline;;
+    justify-content: space-between;
+    gap: 30px;
+    flex-direction: column;
+
+  }
+
+  .article_wrapper > .blog__item > article {
+    width: 448px;
+    padding: 0px 0px;
+  }
+
+  .latest__items article {
+    /* flex-basis: 36%; */
+    padding: 0px;
+}
+
+  .blog__item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .blog__item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .section_header {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 20px;
+  }
+
+  .article_wrapper > .blog__item:nth-child(even) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .popular_wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .article_wrapper > .blog__item > article {
+    width: auto;
+    display: block;
+  }
+
+  .article_wrapper > .blog__item {
+    display: block;
+  }
+
+  .description {
+    padding-bottom: 37px;
+  }
+
+  .latest_wrapper {
+    display: block;
+    margin: 0px auto;
+  }
+
+  .latest__items {
+    display: block;
+  }
+
+  .latest__items img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+  }
+
+  #main__banner .main__banner-title h1{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+    position: absolute;
+    top: 70px;
+    left: 10px;
+  }
+
+  #main__banner{
+    background-image: url(./img/mob-bg-image.png);
+    height: 60vh;
+    width: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
